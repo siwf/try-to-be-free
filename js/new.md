@@ -75,3 +75,12 @@ console.log(test.sign)// undefined
 
 ```
 
+```javascript
+// new 函数的实现
+function myNew(fn, ...args) {
+  var obj = Object.create(fn.prototype);
+  var result = fn.apply(obj, args)
+  return Object.prototype.toString.call(result) === '[object object]' ? result : obj;
+}
+```
+
