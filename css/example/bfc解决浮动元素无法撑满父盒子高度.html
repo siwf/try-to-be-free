@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .top {
+            /* 宽高不加默认100% */
+            background-color: skyblue;
+        }
+        .bottom {
+            width: 300px;
+            height: 300px;
+            /* 子元素浮动 脱离文档流 无法撑开 */
+            float: left;
+            background-color: yellow;
+        }
+        .bfc {
+            overflow: hidden;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="top bfc">
+        <div class="bottom"></div>
+    </div>
+
+
+    </script>
+</body>
+</html>
