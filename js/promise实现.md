@@ -172,6 +172,7 @@
       // 	console.log('1')
       // 	setTimeout(() => {
       // 		resolve('3')
+      //    console.log('33') // 这里有个异步关系 必须要让这个 异步里面的resolve方法 最后执行
       // 	})
       // }).then(res => {
       // 	console.log(res)
